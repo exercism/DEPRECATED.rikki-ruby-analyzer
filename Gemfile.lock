@@ -14,6 +14,8 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    puma (2.8.1)
+      rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
@@ -34,4 +36,5 @@ PLATFORMS
 DEPENDENCIES
   codeminer!
   exercism-analysis!
+  puma
   sinatra
