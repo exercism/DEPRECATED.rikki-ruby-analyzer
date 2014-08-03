@@ -21,6 +21,10 @@ module Analysseur
       content_type 'application/json', charset: 'utf-8'
     end
 
+    get "/" do
+      {repo: "https://github.com/exercism/analysseur"}.to_json
+    end
+
     post "/analyze/:language" do |language|
       config = Analysseur.config[language]
       if config.nil?
