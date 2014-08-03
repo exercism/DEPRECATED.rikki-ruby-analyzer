@@ -27,14 +27,19 @@ module Analysseur
         halt 404, {error: "no analyzer available for #{language}"}.to_json
       end
 
-      code = JSON.parse(request.body.read.to_s)["code"]
+      body = request.body.read.to_s
+      code = JSON.parse(body)["code"]
+      if code.nil?
+        halt 400, {error: "cannot analyze code if it's not there"}.to_json
+      end
+
       analysis = Exercism::Analysis.new(config.adapter.new(code)).run(*config.analyzers)
       results = analysis.values.reject {|result|
         result.feedback.empty?
       }.map {|result|
-        {type: result.type, keys: result.feedback.map(&:type)}
+        {type: result.type, keys: result.feedback.map(&:type).uniq}
       }
-      halt 200, results.to_json
+      halt 200, {results: results}.to_json
     end
   end
 end
