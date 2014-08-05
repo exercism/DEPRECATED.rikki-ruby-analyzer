@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: git://github.com/JacobNinja/exercism-analysis.git
-  revision: 7b417a2ee9822311a7267e639eb4b937e2a5394f
+  revision: b87da2d1bed65ad45fb84be68682077f9d4fbc22
   specs:
     exercism-analysis (0.1.0)
       roodi (~> 4.0)
@@ -14,7 +14,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    puma (2.8.1)
+    puma (2.9.0)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-protection (1.5.3)
