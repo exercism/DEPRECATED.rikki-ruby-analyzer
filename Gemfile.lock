@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: git://github.com/JacobNinja/exercism-analysis.git
-  revision: b87da2d1bed65ad45fb84be68682077f9d4fbc22
+  revision: ccbf99d32de490c2986a642c4ab8a4845a6510fc
   specs:
     exercism-analysis (0.1.0)
       roodi (~> 4.0)
