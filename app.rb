@@ -6,8 +6,9 @@ module Analysseur
   RubyAdapter = Exercism::Adapters::Ruby
   RubyAnalyzers = [
     Exercism::Analyzers::ControlFlow,
-    Exercism::Analyzers::Indentation,
-    Exercism::Analyzers::ForLoop
+    Exercism::Analyzers::Tab,
+    Exercism::Analyzers::ForLoop,
+    Exercism::Analyzers::Shebang,
   ]
 
   ConfigRuby = Config.new(RubyAdapter, RubyAnalyzers)

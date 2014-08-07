@@ -17,15 +17,13 @@ class AppTest < Minitest::Test
 
   def test_analysis
     code = <<-CODE
-   class Thing
-    def stuff
-          "hello"
-   end
- end
+#!/usr/bin/env ruby
+
+puts "hello"
     CODE
     post "/analyze/ruby", {code: code}.to_json
 
-    expected = "{\"results\":[{\"type\":\"indentation\",\"keys\":[\"inconsistent_spacing\"]}]}"
+    expected = "{\"results\":[{\"type\":\"shebang\",\"keys\":[\"shebang\"]}]}"
     assert_equal expected, last_response.body
   end
 end
