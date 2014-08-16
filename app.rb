@@ -7,6 +7,7 @@ module Analysseur
   RubyAnalyzers = [
     Exercism::Analyzers::ControlFlow,
     Exercism::Analyzers::Tab,
+    Exercism::Analyzers::Indentation,
     Exercism::Analyzers::ForLoop,
     Exercism::Analyzers::Shebang,
   ]
