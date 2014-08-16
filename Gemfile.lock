@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: git://github.com/JacobNinja/exercism-analysis.git
-  revision: a296b877d9c5209a108934d1bac25b77f6a2da4c
+  revision: 9852d168391212a56bac6581d5c3786b386b1943
   specs:
     exercism-analysis (0.1.0)
       roodi (~> 4.0)
@@ -23,7 +23,7 @@ GEM
       ruby_parser (~> 3.2, >= 3.2.2)
     ruby_parser (3.6.2)
       sexp_processor (~> 4.1)
-    sexp_processor (4.4.3)
+    sexp_processor (4.4.4)
     sinatra (1.4.5)
       rack (~> 1.4)
       rack-protection (~> 1.4)
