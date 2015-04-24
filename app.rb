@@ -10,6 +10,7 @@ module Analysseur
     Exercism::Analyzers::Indentation,
     Exercism::Analyzers::ForLoop,
     Exercism::Analyzers::Shebang,
+    Exercism::Analyzers::EnumerableCondition,
   ]
 
   ConfigRuby = Config.new(RubyAdapter, RubyAnalyzers)
