@@ -18,8 +18,8 @@ $ curl "http://localhost:8989/analyze/ruby" -H "Content-Type: application/json" 
 }'
 ```
 
-_Note: to get a string that is formatted nicely paste a heredoc into IRB. It will
-escape things nicely._
+_Note: to get a string that is formatted nicely, paste a heredoc into IRB and copy the string that
+is returned. It will be escaped correctly._
 
 ## Testing locally
 
