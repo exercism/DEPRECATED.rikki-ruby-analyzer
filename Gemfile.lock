@@ -4,21 +4,15 @@ GIT
   specs:
     codeminer (0.2)
 
-GIT
-  remote: git://github.com/JacobNinja/exercism-analysis.git
-  revision: ffd9266c9c4a11bc57cd99c86eb6fc2d0e21da2c
-  specs:
-    exercism-analysis (0.1.0)
-      codeminer (~> 0.2)
-      roodi (~> 4.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
-    minitest (5.6.0)
-    puma (2.11.2)
-      rack (>= 1.1, < 2.0)
-    rack (1.6.0)
+    exercism-analysis (0.1.1)
+      codeminer (~> 0.2)
+      roodi (~> 4.0)
+    minitest (5.8.3)
+    puma (2.15.3)
+    rack (1.6.4)
     rack-protection (1.5.3)
       rack
     rack-test (0.6.3)
@@ -26,9 +20,9 @@ GEM
     rake (10.4.2)
     roodi (4.1.1)
       ruby_parser (~> 3.2, >= 3.2.2)
-    ruby_parser (3.6.6)
+    ruby_parser (3.7.2)
       sexp_processor (~> 4.1)
-    sexp_processor (4.5.0)
+    sexp_processor (4.6.0)
     sinatra (1.4.6)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -40,7 +34,7 @@ PLATFORMS
 
 DEPENDENCIES
   codeminer!
-  exercism-analysis!
+  exercism-analysis
   minitest
   puma
   rack-test
