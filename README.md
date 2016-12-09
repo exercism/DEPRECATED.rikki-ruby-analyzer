@@ -1,6 +1,6 @@
-# Analysseur
+# Rikki: Ruby Analyzer
 
-Analyseur provides an API wrapper for JacobNinja's exercism-analysis project (codeminer for exercism.io).
+The Ruby Analizer provides an API wrapper for JacobNinja's exercism-analysis project (codeminer).
 
 ## Usage
 
@@ -26,7 +26,7 @@ is returned. It will be escaped correctly._
 To lean on default configurations
 
 1. Run exercism.io on port 4567
-1. Run analysseur on port 8989
+1. Run the ruby analyzer on port 8989
 1. Run redis (just use the default port, 6379)
 1. Run rikki with no arguments
 1. Submit a problematic piece of code.

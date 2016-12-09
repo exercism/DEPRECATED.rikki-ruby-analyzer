@@ -5,4 +5,4 @@ require './app'
 
 ENV['RACK_ENV'] ||= 'development'
 
-run Analysseur::App
+run RikkiRubyAnalyzer::App

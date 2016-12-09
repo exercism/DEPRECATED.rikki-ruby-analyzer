@@ -1,6 +1,6 @@
 require "json"
 
-module Analysseur
+module RikkiRubyAnalyzer
   Config = Struct.new(:adapter, :analyzers)
 
   RubyAdapter = Exercism::Adapters::Ruby
@@ -29,7 +29,7 @@ module Analysseur
     end
 
     post "/analyze/:language" do |language|
-      config = Analysseur.config[language]
+      config = RikkiRubyAnalyzer.config[language]
       if config.nil?
         halt 404, {error: "no analyzer available for #{language}"}.to_json
       end

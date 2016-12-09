@@ -12,7 +12,7 @@ class AppTest < Minitest::Test
   include Rack::Test::Methods
 
   def app
-    Analysseur::App
+    RikkiRubyAnalyzer::App
   end
 
   def test_analysis
