@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby "2.1.2"
+ruby "2.3.3"
 
-gem 'codeminer', github: 'JacobNinja/codeminer'
+gem 'codeminer', git: 'https://github.com/JacobNinja/codeminer.git'
 gem 'exercism-analysis'
 gem 'puma'
 gem 'rake'
