@@ -25,7 +25,7 @@ module RikkiRubyAnalyzer
     end
 
     get "/" do
-      {repo: "https://github.com/exercism/ruby-analyzer"}.to_json
+      {repo: "https://github.com/exercism/rikki-ruby-analyzer"}.to_json
     end
 
     post "/analyze/:language" do |language|
