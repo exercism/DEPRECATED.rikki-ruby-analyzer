@@ -25,7 +25,7 @@ module Analysseur
     end
 
     get "/" do
-      {repo: "https://github.com/exercism/analysseur"}.to_json
+      {repo: "https://github.com/exercism/ruby-analyzer"}.to_json
     end
 
     post "/analyze/:language" do |language|
