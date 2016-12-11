@@ -16,10 +16,10 @@ class AppTest < Minitest::Test
   end
 
   def test_analysis
-    code = <<-CODE
-#!/usr/bin/env ruby
+    code = <<~CODE
+      #!/usr/bin/env ruby
 
-puts "hello"
+      puts "hello"
     CODE
     post "/analyze/ruby", {code: code}.to_json
 
