@@ -23,7 +23,7 @@ is returned. It will be escaped correctly._
 
 ## Testing locally
 
-To lean on default configurations
+To lean on default configurations:
 
 1. Run exercism.io on port 4567
 1. Run the ruby analyzer on port 8989
